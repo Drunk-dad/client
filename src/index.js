@@ -1,20 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
 import App from './App';
 
-import { Provider } from 'react-redux';
-import { store } from './reducers';
-
-
-console.log(ReactDOM)
-console.log(store)
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-	<Provider store={store}>
-		<App />
-	</Provider>,
-
-);
-
-
+// eslint-disable-next-line react/jsx-filename-extension
+root.render(<App />);

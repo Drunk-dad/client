@@ -1,10 +1,13 @@
+import React from 'react';
+import { Provider } from 'react-redux';
+import { store } from './reducers';
+import NavBar from './components/NavBar/NavBar';
 
-function App() {
-	return (
-		<div className="App">
-			123
-		</div>
-	);
-}
+const App = () => (
+    <Provider store={store}>
+        <NavBar />
+        <div>123</div>
+    </Provider>
+);
 
 export default App;
